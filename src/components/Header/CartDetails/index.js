@@ -31,8 +31,24 @@ const CartDetails = ({ data, removeItem, addItem, inventory }) => {
           </FlexBox>
         </SpaceBetweenContainer>
       ))}
+      <SpaceBetweenContainer>
+        <span>Invoice Value</span>
+        <span>{data.reduce((acc, d) => acc + d.quantity * d.price, 0)}</span>
+      </SpaceBetweenContainer>
       <FlexCenterXContainer>
-        <Button onClick={() => console.log(data)}>Checkout</Button>
+        <Button
+          onClick={() =>
+            console.log({
+              item_list: data,
+              invoice_value: data.reduce(
+                (acc, d) => acc + d.quantity * d.price,
+                0
+              ),
+            })
+          }
+        >
+          Checkout
+        </Button>
       </FlexCenterXContainer>
     </Container>
   );
