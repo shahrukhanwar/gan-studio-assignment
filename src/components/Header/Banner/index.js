@@ -25,7 +25,7 @@ const Banner = () => {
   ];
 
   return (
-    <FlexCenterXContainer>
+    <FlexCenterXContainer style={{ marginBottom: '-100px' }}>
       <Card>
         <Row gutter={[16, 16]}>
           {items.map((item) => (
