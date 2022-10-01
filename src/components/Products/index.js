@@ -13,7 +13,7 @@ const Products = () => {
     <div style={{ marginTop: '100px' }}>
       <Title className="mb-16">New Products</Title>
       <FlexCenterXContainer>
-        <Row gutter={16} style={{ width: '100%' }} justify="center">
+        <Row gutter={[16, 16]} style={{ width: '100%' }} justify="center">
           {products.map((prod) => (
             <Col xl={6} lg={6} md={12} sm={12} xs={24} key={prod.id}>
               <Product data={prod} />
