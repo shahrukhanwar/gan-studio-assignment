@@ -58,7 +58,7 @@ const CartDetails = ({ data, removeItem, addItem, inventory }) => {
           </FlexCenterXContainer>
         </>
       ) : (
-        <span>Cart is empty!</span>
+        <p style={{ textAlign: 'center', marginBottom: '0' }}>Cart is empty!</p>
       )}
     </Container>
   );

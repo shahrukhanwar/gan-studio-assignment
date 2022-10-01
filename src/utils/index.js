@@ -11,7 +11,7 @@ export const productsData = [
     id: 2,
     thumbnail:
       'https://d10srchmli830n.cloudfront.net/1664601554468_37d4fc56-9b98-465a-b2e7-512c083e2665_amirali-mirhashemian-EfkMkUXs0fU-unsplash.jpg',
-    title: 'Red Velet',
+    title: 'Red Velvet',
     price: 120,
     desc: 'Incididunt amet exercitation officia qui exercitation dolor sint. Nostrud irure cillum voluptate aute ut velit sunt veniam nulla nulla eu do proident. Magna in id cillum pariatur nisi laborum voluptate. Ea sit amet laboris mollit aliquip laborum magna eiusmod eu sint quis. Aute pariatur dolore aliquip non occaecat aliquip Lorem enim pariatur do veniam.',
   },
