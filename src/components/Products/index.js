@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Row, Col } from 'antd';
 
 import { Title } from './style';
+import { FlexCenterXContainer } from 'components/UIElements';
 import Product from './Product';
 import { DataContext } from 'context/dataProvider';
 
@@ -11,13 +12,15 @@ const Products = () => {
   return (
     <div style={{ marginTop: '100px' }}>
       <Title className="mb-16">New Products</Title>
-      <Row gutter={[16, 24]} style={{ width: '100%' }}>
-        {products.map((prod) => (
-          <Col span={6} key={prod.id}>
-            <Product data={prod} />
-          </Col>
-        ))}
-      </Row>
+      <FlexCenterXContainer>
+        <Row gutter={16} style={{ width: '100%' }} justify="center">
+          {products.map((prod) => (
+            <Col xl={6} lg={6} md={12} sm={12} xs={24} key={prod.id}>
+              <Product data={prod} />
+            </Col>
+          ))}
+        </Row>
+      </FlexCenterXContainer>
     </div>
   );
 };
